@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+.idea
+db.json
+debug.log
+node_modules/
+public/
+.deploy/
+lib/

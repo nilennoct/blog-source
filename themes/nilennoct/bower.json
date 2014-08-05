@@ -1,0 +1,26 @@
+{
+  "name": "hexo-theme-nilennoct",
+  "version": "0.0.1",
+  "authors": [
+    "nilennoct <hfdjf007@163.com>"
+  ],
+  "description": "theme for hexo",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".bower-cache",
+    ".bower-registry",
+    ".bower-tmp",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "backbone-amd": "~1.1.0",
+    "requirejs": "~2.1.14",
+    "underscore-amd": "~1.5.2"
+  }
+}

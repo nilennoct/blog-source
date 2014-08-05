@@ -1,0 +1,40 @@
+@import "nib"
+@import "_util/mixin"
+@import "_util/grid"
+@import "_variables"
+@import "font.css"
+
+global-reset()
+
+body
+  height 100%
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  right 0
+  overflow hidden
+  font-size font-size
+  font-family font-optimized
+  -webkit-font-smoothing antialiased
+  color color-default
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+/*
+  @media mq-mobile
+    height auto
+    position relative
+    overflow auto*/
+
+a
+  color color-link
+  text-decoration none
+  /*transition color 250ms 0, background-color 250ms 0*/
+
+.clearfix
+  clearfix()
+
+
+
+@import "_partial/header"
+@import "_partial/main"
+@import "_partial/highlight"

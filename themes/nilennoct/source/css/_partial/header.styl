@@ -1,0 +1,91 @@
+#header
+  height 100%
+  width 200px
+  background #444
+  position absolute
+  top 0
+  left 0
+  text-align center
+  padding-top 30px
+  box-sizing border-box
+  overflow auto
+
+  @media mq-mobile
+    position relative
+    width 100%
+    z-index 9
+    height 40px
+    overflow hidden
+    padding-top 4px
+    box-shadow 0 0 10px rgba(0, 0, 0, 0.6)
+
+    &.open
+      height auto
+      max-height 100%
+      overflow auto
+
+  & a
+    color #eeeeee
+
+    &:hover
+      color #ffffff
+
+#header-control
+  color #FFF
+  position absolute
+  right 5px
+  font-size 24px
+  line-height 32px
+  display none
+
+  @media mq-mobile
+    display block
+
+#logo, #subtitle
+  text-shadow 0 2px 1px rgba(0, 0, 0, 0.8);
+
+#logo-wrap
+  margin-bottom 30px
+
+  @media mq-mobile
+    margin-bottom 10px
+
+#logo
+  font-size 2em
+
+#subtitle-wrap
+  margin-bottom 20px
+
+  @media mq-mobile
+    display none
+
+#subtitle
+  font-size 1.4em
+
+#header-avatar
+  background url("../image/avatar.jpg")
+  width 128px
+  height 128px
+  background-size 100%
+  border-radius 64px
+  margin 0 auto 20px
+
+  @media mq-mobile
+    display none
+
+#main-nav
+  & .main-nav-link
+    display block
+    padding 5px
+    background #555
+    margin 0 20px 10px
+
+    @media mq-mobile
+      padding 10px
+
+    &:hover
+      background #666
+
+#header-search
+  position absolute
+  bottom 10px

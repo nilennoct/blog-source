@@ -1,0 +1,283 @@
+#main
+  height 100%
+  overflow-x hidden
+  overflow-y auto
+  /* the rule below make ios fly */
+  -webkit-overflow-scrolling: touch
+  margin-left 200px
+  box-sizing border-box
+  padding 20px
+  background color-background
+
+  @media mq-mobile
+    margin-left 0
+    position absolute
+    width 100%
+    padding 0
+    top 40px
+    bottom 0
+    height auto
+    /*height calc(100% - 40px)*/
+
+  article, #comments
+    width 600px
+    margin 0 auto 40px
+
+    @media mq-tablet
+      width 100%
+      margin 0 auto 30px
+
+  article
+    position relative
+    border 1px solid color-border
+    background #fff
+
+    @media mq-mobile
+      width 100%
+      border 0 none
+      margin 0
+
+      &:last-child
+        margin-top 20px
+
+    &:hover .article-meta
+      left -100px
+
+  #comments
+    @media mq-mobile
+      display none
+
+.article-meta
+  position absolute
+  width 105px
+  left 0px
+  top 39px
+  overflow hidden
+  background #fff
+  box-sizing border-box
+  padding 10px 5px 10px 10px
+  border 1px solid color-border
+  border-right 0
+  transition left 250ms 0
+
+  .article-date
+    display block
+    margin-bottom 10px
+
+  .article-category-link
+    display: block;
+    border-left 3px solid #444
+    margin-left -10px
+    padding 2px 0 2px 7px
+
+    &:hover
+      border-left-color color-primary
+
+@media mq-tablet
+  .article-meta
+    position static
+    border 0 none
+    width 100%
+
+    .article-date
+      float right
+      margin 0
+
+    .article-category-link
+      padding 0 0 0 7px
+
+.article-inner
+  position relative
+  background #fff
+  overflow hidden
+
+  .article-header
+    background #444
+    padding 10px 20px
+    font-size 16px
+    line-height 20px
+    font-weight bold
+    color #eee
+
+    a
+      color #eee
+
+  .article-tag-list
+    padding 10px 20px 0
+    margin-bottom -10px
+
+    .article-tag-list-link
+      display: inline-block
+      padding 3px 5px
+      font-size 12px
+      background: color-background
+      color: color-grey
+
+      &:hover
+        background: color-link
+        color: #fff
+
+  .article-entry
+    padding 20px
+
+    p, li
+      line-height 22px
+      margin-bottom 5px
+
+      &:last-child
+        margin-bottom 0
+
+    blockquote
+      position relative
+      padding 20px 20px 20px 40px
+      margin 0 -21px 10px 0
+      background #f8f8f8
+      background: linear-gradient(left, #f6f6f6, #fafafa);
+
+      &::before
+        content '“'
+        font-size 48px
+        position absolute
+        top 6px
+        left 10px
+
+    h1, h2, h3, h4, h5, h6
+      font-weight: bold
+
+    h1, h2, h3, h4, h5, h6
+      line-height: line-height-title
+      margin: line-height-title 0
+
+    a
+      color: color-link
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+    img
+      max-width 100%
+
+    ul, ol, dl
+      margin 10px 0
+
+    li
+      border-left 2px solid color-border
+      padding-left 10px
+
+    iframe
+      border: none
+
+    table
+      width: 100%
+      border-collapse: collapse
+      border-spacing: 0
+
+    th
+      font-weight: bold
+      border-bottom: 3px solid color-border
+      padding-bottom: 0.5em
+
+    td
+      border-bottom: 1px solid color-border
+      padding: 10px 0
+
+    .article-more-link a
+      display: inline-block
+      line-height: 1em
+      padding: 6px 15px
+      margin-top: 10px
+      background: color-background
+      color: color-grey
+      text-shadow: 0 1px #fff
+
+      &:hover
+        background: color-link
+        color: #fff
+        text-shadow: 0 1px darken(color-link, 20%)
+
+#article-nav
+  clearfix()
+  position: relative
+  @media mq-normal
+    margin-bottom 20px
+    &:before
+      absolute-center(8px)
+      content ""
+      border-radius 50%
+      background color-border
+      box-shadow 0 1px 2px #fff
+
+.article-nav-link-wrap
+  text-decoration: none
+  text-shadow: 0 1px #fff
+  color: color-grey
+  box-sizing: border-box
+  margin-bottom: 20px
+  text-align: center
+  display: block
+  &:hover
+    color: color-default
+  @media mq-normal
+    width: 50%
+    margin-top: 0
+
+#article-nav-newer
+  @media mq-normal
+    float: left
+    text-align: right
+    padding-right: 20px
+
+#article-nav-older
+  @media mq-normal
+    float: right
+    text-align: left
+    padding-left: 20px
+
+.article-nav-caption
+  text-transform: uppercase
+  letter-spacing: 2px
+  color: color-border
+  line-height: 1em
+  font-weight: bold
+  #article-nav-newer &
+    margin-right: -2px
+
+.article-nav-title
+  font-size: 0.85em
+  line-height: line-height
+  margin-top: 0.5em
+
+#page-nav
+  clearfix()
+  margin: 20px auto
+  background: #fff
+  border: 1px solid color-border
+  text-align: center
+  color: color-grey
+  overflow: hidden
+
+  @media mq-normal
+    width 600px
+
+  a, span
+    padding: 10px 20px
+  a
+    color: color-grey
+    text-decoration: none
+    &:hover
+      background: color-default
+      color: #fff
+  .prev
+    float: left
+  .next
+    float: right
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    color: color-default
+    font-weight: bold
+  .space
+    color: color-border
