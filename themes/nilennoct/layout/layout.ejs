@@ -4,6 +4,9 @@
 <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
 
 <section id="main"><%- body %></section>
+
+<div id="loadingMask"><span class="icon-cycle"></span></div>
+
 <% if (false) { %>
 <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
 <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>

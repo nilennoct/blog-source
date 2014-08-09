@@ -63,12 +63,29 @@
   font-size 1.4em
 
 #header-avatar
+  position relative
   background url("../image/avatar.jpg")
   width 128px
   height 128px
   background-size 100%
   border-radius 64px
   margin 0 auto 20px
+  -webkit-filter blur(2px)
+  transition -webkit-filter 500ms 0 linear
+
+  &.icon-github::before
+    color: #444
+    font-size 128px
+    position absolute
+    top 2px
+    left 128px
+    opacity 0.5
+    transform rotate(-180deg)
+    transition transform 500ms 500ms linear
+  &:hover
+    -webkit-filter none
+    &.icon-github::before
+      transform translate3d(-128px,0,0) rotate(0deg)
 
   @media mq-mobile
     display none

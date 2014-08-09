@@ -38,153 +38,21 @@ $ sudo ./build
 
 RPi上的GPIO与wiringPi中的Pin的对应关系可以参看下表。
 
-<table style="width: 450px;border: 1px solid #e7e7e7;">
-<tbody>
-<tr>
-<th style="text-align: center;">wiringPi<br>
-Pin</th>
-<th style="text-align: center;">BCM<br>
-GPIO</th>
-<th style="text-align: center;">Name</th>
-<th style="text-align: center;">Header</th>
-<th style="text-align: center;">Name</th>
-<th style="text-align: center;">BCM<br>
-GPIO</th>
-<th style="text-align: center;">wiringPi<br>
-Pin</th>
-</tr>
-<tr>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;"><span style="color: #ff0000;">3.3v</span></td>
-<th style="text-align: center;">1 | 2</th>
-<td style="text-align: center;" align="center"><span style="color: #ff6600;">5v</span></td>
-<td style="text-align: center;" align="center">–</td>
-<td style="text-align: center;" align="center">–</td>
-</tr>
-<tr>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">R1:0/R2:2</td>
-<td style="text-align: center;"><span style="color: #33cccc;">SDA0</span></td>
-<th style="text-align: center;">3 | 4</th>
-<td style="text-align: center;"><span style="color: #ff6600;">5v</span></td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">–</td>
-</tr>
-<tr>
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">R1:1/R2:3</td>
-<td style="text-align: center;"><span style="color: #33cccc;">SCL0</span></td>
-<th style="text-align: center;">5 | 6</th>
-<td style="text-align: center;"><span style="color: #000000;">0v</span></td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">–</td>
-</tr>
-<tr>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;"><span style="color: #008000;">GPIO7</span></td>
-<th style="text-align: center;">7 | 8</th>
-<td style="text-align: center;"><span style="color: #ffff00;">TxD</span></td>
-<td style="text-align: center;">14</td>
-<td style="text-align: center;">15</td>
-</tr>
-<tr>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;"><span style="color: #000000;">0v</span></td>
-<th style="text-align: center;">9 | 10</th>
-<td style="text-align: center;"><span style="color: #ffff00;">RxD</span></td>
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">16</td>
-</tr>
-<tr>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">17</td>
-<td style="text-align: center;"><span style="color: #008000;">GPIO0</span></td>
-<th style="text-align: center;">11 | 12</th>
-<td style="text-align: center;"><span style="color: #008000;">GPIO1</span></td>
-<td style="text-align: center;">18</td>
-<td style="text-align: center;">1</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">R1:21/R2:27</td>
-<td style="text-align: center;"><span style="color: #008000;">GPIO2</span></td>
-<th style="text-align: center;">13 | 14</th>
-<td style="text-align: center;"><span style="color: #000000;">0v</span></td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">–</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">22</td>
-<td style="text-align: center;"><span style="color: #008000;">GPIO3</span></td>
-<th style="text-align: center;">15 | 16</th>
-<td style="text-align: center;"><span style="color: #008000;">GPIO4</span></td>
-<td style="text-align: center;">23</td>
-<td style="text-align: center;">4</td>
-</tr>
-<tr>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;"><span style="color: #ff0000;">3.3v</span></td>
-<th style="text-align: center;">17 | 18</th>
-<td style="text-align: center;"><span style="color: #008000;">GPIO5</span></td>
-<td style="text-align: center;">24</td>
-<td style="text-align: center;">5</td>
-</tr>
-<tr>
-<td style="text-align: center;">12</td>
-<td style="text-align: center;">10</td>
-<td style="text-align: center;"><span style="color: #800080;">MOSI</span></td>
-<th style="text-align: center;">19 | 20</th>
-<td style="text-align: center;"><span style="color: #000000;">0v</span></td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">–</td>
-</tr>
-<tr>
-<td style="text-align: center;">13</td>
-<td style="text-align: center;">9</td>
-<td style="text-align: center;"><span style="color: #800080;">MISO</span></td>
-<th style="text-align: center;">21 | 22</th>
-<td style="text-align: center;"><span style="color: #008000;">GPIO6</span></td>
-<td style="text-align: center;">25</td>
-<td style="text-align: center;">6</td>
-</tr>
-<tr>
-<td style="text-align: center;">14</td>
-<td style="text-align: center;">11</td>
-<td style="text-align: center;"><span style="color: #800080;">SCLK</span></td>
-<th style="text-align: center;">23 | 24</th>
-<td style="text-align: center;"><span style="color: #800080;">CE0</span></td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">10</td>
-</tr>
-<tr>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;">–</td>
-<td style="text-align: center;"><span style="color: #000000;">0v</span></td>
-<th style="text-align: center;">25 | 26</th>
-<td style="text-align: center;"><span style="color: #800080;">CE1</span></td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">11</td>
-</tr>
-<tr>
-<th style="text-align: center;">wiringPi<br>
-Pin</th>
-<th style="text-align: center;">BCM<br>
-GPIO</th>
-<th style="text-align: center;">Name</th>
-<th style="text-align: center;">Header</th>
-<th style="text-align: center;">Name</th>
-<th style="text-align: center;">BCM<br>
-GPIO</th>
-<th style="text-align: center;">wiringPi<br>
-Pin</th>
-</tr>
-</tbody>
-</table>
+| wiringPi Pin | BCM GPIO | Name | Header | Name | BCM GPIO | wiringPi Pin |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| – | – | 3.3v | 1 &#124; 2 | 5v | – | – |
+| 8 | R1:0/R2:2 | SDA0 | 3 &#124; 4 | 5v | – | – |
+| 9 | R1:1/R2:3 | SCL0 | 5 &#124; 6 | 0v | – | – |
+| 7 | 4 | GPIO7 | 7 &#124; 8 | TxD | 14 | 15 |
+| – | – | 0v | 9 &#124; 10 | RxD | 15 | 16 |
+| 0 | 17 | GPIO0 | 11 &#124; 12 | GPIO1 | 18 | 1 |
+| 2 | R1:21/R2:27 | GPIO2 | 13 &#124; 14 | 0v | – | – |
+| 3 | 22 | GPIO3 | 15 &#124; 16 | GPIO4 | 23 | 4 |
+| – | – | 3.3v | 17 &#124; 18 | GPIO5 | 24 | 5 |
+| 12 | 10 | MOSI | 19 &#124; 20 | 0v | – | – |
+| 13 | 9 | MISO | 21 &#124; 22 | GPIO6 | 25 | 6 |
+| 14 | 11 | SCLK | 23 &#124; 24 | CE0 | 8 | 10 |
+| – | – | 0v | 25 &#124; 26 | CE1 | 7 | 11 |
 
 > 更多信息请参看[wiringPi Pins](https://projects.drogon.net/raspberry-pi/wiringpi/pins/)
 
