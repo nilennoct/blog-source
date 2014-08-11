@@ -22,6 +22,7 @@
     "backbone-amd": "~1.1.0",
     "requirejs": "~2.1.14",
     "underscore-amd": "~1.5.2",
-    "fancybox": "~2.1.5"
+    "fancybox": "~2.1.5",
+    "zeptojs": "~1.1.4"
   }
 }

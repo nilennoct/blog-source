@@ -87,7 +87,7 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repo: https://github.com/nilennoct/nilennoct.github.io.git
+  repo: git@github.com:nilennoct/nilennoct.github.io.git
   branch: master
 
 # Plugins
