@@ -1,10 +1,13 @@
 <% if (theme.baidu_analytics){ %>
-<script>
+<script id="bd-hm">
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
         hm.src = "//hm.baidu.com/hm.js?<%= theme.baidu_analytics %>";
-        var s = document.getElementsByTagName("script")[0];
+        hm.onload = function() {
+            delete window["_bdhm_loaded_<%= theme.baidu_analytics %>"];
+        };
+        var s = document.getElementById('bd-hm');
         s.parentNode.insertBefore(hm, s);
     })();
 </script>

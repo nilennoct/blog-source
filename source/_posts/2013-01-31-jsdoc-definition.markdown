@@ -7,7 +7,6 @@ slug: jsdoc-definition
 title: JSDoc描述
 wordpress_id: 143
 categories:
-- Web
 - Javascript
 ---
 

@@ -7,7 +7,6 @@ slug: css-naming-specification
 title: 关于团队合作的css命名规范
 wordpress_id: 10
 categories:
-- Web
 - CSS
 ---
 

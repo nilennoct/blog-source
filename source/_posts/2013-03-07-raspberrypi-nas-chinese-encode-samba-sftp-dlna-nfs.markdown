@@ -12,13 +12,7 @@ categories:
 
 > 浙江大学嵌入式系统课程
 
-
-
-
-
 > 在RPi上搭建NAS的过程详见《[在RaspberryPi上搭建NAS](http://www.nilennoct.com/raspberrypi-nas-samba-sftp/)》
-
-
 
 NAS已经搭建好了，接下来我们要测试一下各种方式对中文路径名、文件名的兼容情况。
 

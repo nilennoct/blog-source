@@ -6,6 +6,8 @@ date: 2013-05-10 14:05
 comments: true
 categories:
 - Note
+tags:
+- Blog
 ---
 
 偶然看到了[Octopress](http://octopress.org/)的介绍，我便被它惊人的载入速度和独特的离线写作模式吸引了。虽然之前的Wordpress使用的也挺不错的，但细想之下其实我还真用不到那么多功能，顿时让我有了把博客迁移到Octopress上的冲动。

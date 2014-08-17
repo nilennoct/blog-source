@@ -6,7 +6,7 @@ comments: true
 sharing: true
 footer: true
 ---
-> [中文版](/neoid3)
+> [中文版](/neoid3/)
 
 ## About
 

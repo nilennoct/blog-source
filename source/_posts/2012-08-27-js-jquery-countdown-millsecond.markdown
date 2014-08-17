@@ -7,7 +7,6 @@ slug: js-jquery-countdown-millsecond
 title: JS实现倒计时的一种方法
 wordpress_id: 129
 categories:
-- Web
 - Javascript
 ---
 

@@ -12,7 +12,6 @@ categories:
 
 > 浙江大学嵌入式系统课程
 
-
 给RPi连接上移动硬盘，可以很方便的将其变为NAS（Network Attached Storage）供远程使用。
 
 **连接移动硬盘**

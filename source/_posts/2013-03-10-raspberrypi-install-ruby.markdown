@@ -12,8 +12,6 @@ categories:
 
 > 浙江大学嵌入式系统课程
 
-
-
 **安装Ruby**
 
 ``` bash

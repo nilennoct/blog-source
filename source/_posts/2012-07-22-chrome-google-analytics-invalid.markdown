@@ -8,8 +8,6 @@ title: Chrome中Google Analytics无法跟踪
 wordpress_id: 103
 categories:
 - Note
-post_format:
-- 日志
 ---
 
 之前给博客加上Google Analytics后遇到了一个问题，就是用Chrome时Google Analytics无法获取到访问记录，但是用IE、Firefox却可以记录。通过Chrome的开发者工具中的Network工具，我发现是因为Google Analytics用来提交数据的__utm.gif文件载入失败。

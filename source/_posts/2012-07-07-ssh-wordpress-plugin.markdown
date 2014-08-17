@@ -7,7 +7,9 @@ slug: ssh-wordpress-plugin
 title: SF通过SSH安装Wordpress插件
 wordpress_id: 17
 categories:
-- Wordpress
+- Note
+tags:
+- Blog
 ---
 
 Putty登录SourceForge的SSH：

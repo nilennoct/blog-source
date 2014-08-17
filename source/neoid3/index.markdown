@@ -6,7 +6,7 @@ comments: true
 sharing: true
 footer: true
 ---
-> [English version](/neoid3-en)
+> [English version](/neoid3-en/)
 
 ## 关于
 

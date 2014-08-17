@@ -7,10 +7,7 @@ slug: ie6-position-fixed-bug
 title: 完美解决IE6不支持position:fixed的bug
 wordpress_id: 120
 categories:
-- Web
 - CSS
-post_format:
-- 日志
 ---
 
 最近在写前端的时候发现IE6下存在不支持position:fixed的bug。通过查找资料找到了较完美的的解决方法。代码如下：

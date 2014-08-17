@@ -12,8 +12,6 @@ categories:
 
 > 浙江大学嵌入式系统课程
 
-
-
 一开始我参考的是Oracle官网上的《[Getting Started with Java® SE Embedded on the Raspberry Pi](http://www.oracle.com/technetwork/articles/java/raspberrypi-1704896.html)》，从Oracle的网站上下载了ejre-7u10-fcs-b18-linux-arm-vfp-client_headless-28_nov_2012.tar.gz并进行了安装，方法如下。
 
 - 上传ejre-7u10-fcs-b18-linux-arm-vfp-client_headless-28_nov_2012.tar.gz文件到RPi的/home/pi/文件夹。

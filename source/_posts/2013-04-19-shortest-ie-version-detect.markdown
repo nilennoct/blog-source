@@ -7,7 +7,6 @@ slug: shortest-ie-version-detect
 title: 最短的 IE 版本判断
 wordpress_id: 264
 categories:
-- Web
 - Javascript
 ---
 

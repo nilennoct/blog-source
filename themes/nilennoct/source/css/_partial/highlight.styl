@@ -34,9 +34,12 @@ $line-numbers
   code
     background: color-background
     text-shadow: 0 1px #fff
-    padding: 3px
-    margin: 0 3px
+    padding 0 3px
+    margin 0 3px
     font-size 12px
+    display inline-block
+    line-height 18px
+    vertical-align middle
   pre
     @extend $code-block
     code
@@ -58,9 +61,10 @@ $line-numbers
     figcaption
       clearfix()
       font-size: 0.85em
-      color: highlight-comment
+      color: highlight-foreground
       line-height: 1em
       margin-bottom: 1em
+      font-weight bold
       a
         float: right
     .gutter pre

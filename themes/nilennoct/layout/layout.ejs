@@ -3,7 +3,10 @@
 <body>
 <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
 
-<section id="main"><%- body %></section>
+<section id="main">
+    <%- body %>
+    <%- partial('_partial/baidu-analytics') %>
+</section>
 
 <div id="loadingMask"><span class="icon-cycle"></span></div>
 

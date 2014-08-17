@@ -8,8 +8,6 @@ title: Apache开启mod_rewrite
 wordpress_id: 123
 categories:
 - Note
-post_format:
-- 日志
 ---
 
 连接SSH或打开终端

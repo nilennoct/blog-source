@@ -7,7 +7,6 @@ slug: ie-word-wrap
 title: 关于ie6、ie7折行问题
 wordpress_id: 110
 categories:
-- Web
 - CSS
 ---
 
