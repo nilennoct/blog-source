@@ -6,6 +6,9 @@
 <section id="main">
     <%- body %>
     <%- partial('_partial/baidu-analytics') %>
+    <script>
+        window.__v = <%= (config.__v = config.__v || +(new Date)) %>;
+    </script>
 </section>
 
 <div id="loadingMask"><span class="icon-cycle"></span></div>
